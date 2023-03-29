@@ -1,10 +1,12 @@
 
+
 *{
     margin: 0;
     padding: 0;
     font-family:'Poppins',sans-serif;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -56,6 +58,21 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%;
 }
+.btn {
+    color: var(--white);
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    max-width: max-content;
+    padding: var(--padding, 10px 40px);
+    border-radius: 50px;
+    transition: var(--transition-2);
+}
+  
+.btn-primary.blue { background-color: var(--klein-blue); }
+  
+.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+  
 .header-text h1{
     margin-left: 5%;
     margin-top: 5%;
@@ -71,6 +88,7 @@ nav ul li a:hover::after{
     padding:80px 0 ;
     background-color:rgb(10, 18, 18);
     background-size: cover;
+    background-repeat: inherit;
 }
 .row{
     display: flex;
@@ -151,6 +169,9 @@ h1{
     color: #ff004f;
     margin-left: 30px;
 }
+.slide{
+    margin-top:40px;
+}
 .slideshow{
     margin: 0 20%;
     align-items: center;
@@ -166,13 +187,26 @@ h1{
     position: absolute;
     height: 50px;
     width: 30px;
+    cursor: pointer;
 }
 .button-display-right{
     margin: -270px 1040px;
     position: absolute;
     height: 50px;
     width: 30px;
+    cursor: pointer;
 }
+/*-----------------contact-------------------*/
+#contact{
+    padding:80px 0 ;
+    background-color:rgb(10, 18, 18);
+    background-size: cover;
+}
+.contact-left h1{
+    margin-left: 0;
+}
+
+
 
 
 
